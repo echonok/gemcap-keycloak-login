@@ -1,0 +1,126 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body > div::before {
+  content: 'GemCap';
+  color: #462300;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: -2px;
+  margin: 50px 340px 15px 0;
+}
+
+a {
+  color: black;
+}
+
+#kc-header {
+  display: none;
+}
+
+#kc-header::after {
+  display: none;
+}
+
+div#kc-header {
+  width: 100%;
+  color: #462300;
+  background-color: white;
+}
+
+#kc-page-title {
+  color: white;
+  display: none;
+}
+
+#kc-content {
+  background-image: url('../img/bg.png');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  margin: auto;
+  width: 600px;
+}
+
+#kc-content-wrapper::before {
+  content: 'We finance stuff™';
+  color: white;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 96px;
+}
+
+#kc-content-wrapper {
+  padding: 60px 40px;
+}
+
+#kc-login {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: Calibri, "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#kc-login:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #ff5f00;
+}
+
+div#kc-form label {
+  color: black !important;
+  display: block;
+  font-size: 30px;
+}
+
+#kc-form-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+#kc-form-login {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#kc-form-login label {
+  text-transform: lowercase;
+}
+
+#kc-form-login > div:nth-child(1),
+#kc-form-login > div:nth-child(2) {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+}
+
+#kc-form-login > div:nth-child(1) {
+  margin-right: 20px;
+}
+
+#username,
+#password {
+  width: 100%;
+  padding: 5px;
+}
