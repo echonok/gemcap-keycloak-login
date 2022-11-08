@@ -64,7 +64,7 @@ div#kc-header {
   padding: 60px 40px;
 }
 
-#kc-login {
+#kc-form-buttons > input {
   background: transparent;
   border: 2px solid #fff;
   color: #fff;
@@ -76,21 +76,24 @@ div#kc-header {
   padding: 10px 32px;
   border-radius: 50px;
   transition: 0.5s;
-  margin: 0 20px 20px 0;
+  margin-top: 20px;
   text-decoration: none;
   cursor: pointer;
 }
 
-#kc-login:hover {
+#kc-form-buttons > input:hover {
   background: #fff;
   border-color: #fff;
   color: #ff5f00;
 }
 
-div#kc-form label {
+div#kc-form label,
+#kc-form-login label,
+#kc-passwd-update-form label {
   color: black !important;
   display: block;
-  font-size: 30px;
+  font-size: 25px;
+  text-transform: lowercase;
 }
 
 #kc-form-buttons {
@@ -99,28 +102,49 @@ div#kc-form label {
   justify-content: center;
 }
 
-#kc-form-login {
+#kc-form-login,
+#kc-passwd-update-form {
   margin-top: 30px;
   text-align: center;
 }
 
-#kc-form-login label {
-  text-transform: lowercase;
-}
 
 #kc-form-login > div:nth-child(1),
 #kc-form-login > div:nth-child(2) {
-  display: inline-block;
   width: 45%;
-  vertical-align: top;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #kc-form-login > div:nth-child(1) {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+
+#kc-form-login > div:nth-child(2) {
+  margin-left: 10px;
 }
 
 #username,
-#password {
-  width: 100%;
+#password,
+#password-new,
+#password-confirm {
   padding: 5px;
+  font-size: 18px;
+}
+
+#kc-passwd-update-form > div:nth-child(3),
+#kc-passwd-update-form > div:nth-child(4) {
+  width: 45%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#kc-passwd-update-form > div:nth-child(3) {
+  margin-right: 10px;
+}
+
+#kc-passwd-update-form > div:nth-child(4) {
+  margin-left: 10px;
 }
